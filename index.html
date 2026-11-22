@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ინტერიერის დიზაინის სტუდია — სივრცეები, სადაც თავს კარგად გრძნობ.">
+  <title>Axali Studio — ინტერიერის დიზაინი</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="მთავარი ნავიგაცია">
+      <a class="brand" href="#" aria-label="მთავარ გვერდზე">
+        <span class="brand-mark">A</span>
+        <span>Axali Studio</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#projects">პროექტები</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">ინტერიერის დიზაინის სტუდია</p>
+          <h1>სივრცე, სადაც <span>თავს სახლში გრძნობ.</span></h1>
+          <p class="hero-text">
+            ვქმნით გააზრებულ, თბილ ინტერიერებს, რომლებიც თქვენს
+            ხასიათს, ყოველდღიურობასა და ოცნებებს ასახავს.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">დაგეგმეთ კონსულტაცია</a>
+            <a class="text-link" href="#projects">პროექტების ნახვა <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <a class="hero-photo" href="#projects" aria-label="ინტერიერის პროექტების ნახვა">
+            <img src="download.jpg" alt="მშვენიერი თანამედროვე სახლი ბუნებაში">
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="projects container" id="projects">
+      <div class="project-gallery">
+        <a class="gallery-card" href="#contact">
+          <img src="download.jpg" alt="თანამედროვე სახლი ბუნებაში">
+          <h3>სიმშვიდის სახლი</h3>
+          <p>საცხოვრებელი ინტერიერი · თბილისი</p>
+        </a>
+        <a class="gallery-card" href="#contact">
+          <img src="OGP_0751.jpg" alt="თანამედროვე სახლი ბაღით">
+          <h3>თბილი მინიმალიზმი</h3>
+          <p>სამზარეულო და სასადილო · თბილისი</p>
+        </a>
+        <a class="gallery-card" href="#contact">
+          <img src="images.jpg" alt="ბუნებრივი მასალებით მორთული სახლი">
+          <h3>ბუნებრივი რიტმი</h3>
+          <p>საძინებლის ინტერიერი · ბათუმი</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <p class="eyebrow">შექმენით თქვენი სივრცე</p>
+      <h2>დავიწყოთ თქვენი ამბით.</h2>
+      <a class="button" href="mailto:hello@example.com">მოგვწერეთ</a>
+      <div class="contact-details" aria-label="საკონტაქტო ინფორმაცია">
+        <div class="contact-detail">
+          <h3>ელფოსტა</h3>
+          <p>hello@example.com</p>
+        </div>
+        <div class="contact-detail">
+          <h3>ტელეფონი</h3>
+          <p>+995 555 12 34 56</p>
+        </div>
+        <div class="contact-detail">
+          <h3>მისამართი</h3>
+          <p>თბილისი, საქართველო</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll(".gallery-card").forEach((card) => {
+      card.addEventListener("click", (event) => {
+        event.preventDefault();
+        card.classList.toggle("is-enlarged");
+      });
+    });
+  </script>
+</body>
+</html>
